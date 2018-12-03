@@ -6,7 +6,7 @@ if [ "$OS_LOGIN_FAILED" -eq "0" ]; then
 
   # Load demo vars
   source test_data.sh
-#openstack project show -f json  dmlrdemo  | python -c "import sys, json; print json.load(sys.stdin)['id']"
+
   # Delete VM
   # First calculate project id
   PROJECT_ID=$(openstack project show -f json $DEMO_PROJECT_NAME  | python -c "import sys, json; print json.load(sys.stdin)['id']" 2> /dev/null)
