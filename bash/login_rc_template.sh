@@ -25,7 +25,7 @@ unset OS_TENANT_ID
 unset OS_TENANT_NAME
 # In addition to the owning entity (tenant), OpenStack stores the entity
 # performing the action as the **user**.
-export OS_USERNAME="daimleradmin"
+export OS_USERNAME="<USER_NAME>"
 # With Keystone you pass the keystone password.
 echo "+-----------------------------------------------------------------"
 echo "|"
